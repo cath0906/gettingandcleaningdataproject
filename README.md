@@ -1,4 +1,4 @@
-### Getting and Cleaning Data Course Project
+## Getting and Cleaning Data Course Project
 *Author: CAJasareno*
 
 This repo contains the requirements in the final project of Getting and Cleaning Data module of Johns Hopkins University in Coursera. 
@@ -23,20 +23,20 @@ how to effectively clean the collected data for easier use.
 5. The work submitted for this project is the work of the student who submitted it.
 
 
-### Data Source: UCI Human Activity Recognition
+## Data Source: UCI Human Activity Recognition
 The data that was used to complete this project came from the UCI Human Activity Recognition Using Smartphones Data Set.
 Available data from this source was collected by recording the activities of daily living (ADL) of 30 subjects with waist-mounted smartphone embedded with inertial sensors.
 Further information regarding the data source can be found in this link: *http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones*
 
 
-### run_analysis.R
+## run_analysis.R
 As part of the requirements, run_analysis.R script was created to clean the provided data which will be used for later analysis.
-The script should be saved or downloaded in the folder where the UCI HAR Dataset folder is saved for it run correctly.
+**_The script should be saved or downloaded inside the "UCI HAR Dataset" folder for it run correctly._**
 
 After running the source function to call run_analysis, just run the code below to get the final tidy dataset:
 >run_analysis()
 
-The function run_analysis will output the final tidy dataset in the form of a dataframe.
+The function run_analysis will export the tidy data in the form of a text file (*final_tidy_data.txt*) in your working directory.
 
 *Notes:*
 
