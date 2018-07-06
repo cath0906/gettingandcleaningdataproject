@@ -1,4 +1,4 @@
-###Getting and Cleaning Data Course Project
+### Getting and Cleaning Data Course Project
 *Author: CAJasareno*
 
 This repo contains the requirements in the final project of Getting and Cleaning Data module of Johns Hopkins University in Coursera. 
@@ -6,7 +6,7 @@ The project aims to assess the understanding of the students on how to work with
 how to effectively clean the collected data for easier use.
 
 
-##Instructions for the Project (as posted in Coursera)
+## Instructions for the Project (as posted in Coursera)
 
 **An R script (called run_analysis.R) will be created which will do the following:**
 1. Merges the training and the test sets to create one data set.
@@ -23,13 +23,13 @@ how to effectively clean the collected data for easier use.
 5. The work submitted for this project is the work of the student who submitted it.
 
 
-###Data Source: UCI Human Activity Recognition
+### Data Source: UCI Human Activity Recognition
 The data that was used to complete this project came from the UCI Human Activity Recognition Using Smartphones Data Set.
 Available data from this source was collected by recording the activities of daily living (ADL) of 30 subjects with waist-mounted smartphone embedded with inertial sensors.
 Further information regarding the data source can be found in this link: *http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones*
 
 
-###run_analysis.R
+### run_analysis.R
 As part of the requirements, run_analysis.R script was created to clean the provided data which will be used for later analysis.
 The script should be saved or downloaded in the folder where the UCI HAR Dataset folder is saved for it run correctly.
 
@@ -39,5 +39,6 @@ After running the source function to call run_analysis, just run the code below 
 The function run_analysis will output the final tidy dataset in the form of a dataframe.
 
 *Notes:*
+
 *The methodology on how the datasets were merged and cleaned is available in the code book.*
 *In-depth description of the UCI HAR Dataset is also documented in the code book*
