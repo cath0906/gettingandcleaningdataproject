@@ -161,8 +161,8 @@ The complete list of variables of each feature vector is available in 'features.
 
 ### Step 5: Substitute names of features for easier description
 5.1 It is also required to appropriately labels the dataset with descriptive variable names.
-5.2 Using sub function, features with time domain signals (starts with "t") were changed to "time"
-5.3 Using sub function, features with frequency domain signals (starts with "f") were changed to "freq"
+5.2 Using sub function, features with time domain signals, not included the estimated features, (starts with "t") were changed to "time".
+5.3 Using sub function, features with frequency domain signals, not included the estimated features, (starts with "f") were changed to "freq".
 5.4 Note that other names of features were retained to avoid misnaming of features
 
 ### Step 6: Create a tidy dataset with average a each variable for each "activity" and "subject"
@@ -362,4 +362,4 @@ MeanOf_angle(Z,gravityMean)
 *The whole process of creating the tidy dataset from the UCI HAR datasets was coded and documented in run_analysis.R script.*
 
 
-*The script will only return the tidy dataset. Exporting (ie. csv file) of the tidy dataset should be done outside the created R script.*
+*The script will export the final tidy dataset in your working directory in a text file format (final_tidy_data.txt)*
