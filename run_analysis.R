@@ -6,7 +6,7 @@
 
 ## If you don't have yet the data needed for this function, please download first the data using download.file in this url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## Note that you have to save/download this script where the "UCI HAR Dataset" is saved and change directory before you source this function
+## Note that you have to save/download this script inside "UCI HAR Dataset" folder then change directory before you source this function
 ## Retain the sub-folders of train and test
 
 
@@ -71,8 +71,8 @@ run_analysis <- function() {
 
 	## substitute names of features for easier description
 	var.names <- names(har.data)
-	var.names <- sub("^t","time",var.names) ##for features with time domain signals
-	var.names <- sub("^f","freq",var.names) ##for features with frequency domain signals
+	var.names <- sub("^t","time",var.names) ##for features with time domain signals (estimated features not included)
+	var.names <- sub("^f","freq",var.names) ##for features with frequency domain signals (estimated features not included)
 	colnames(har.data) <- var.names         ##other names of features were retained to avoid misnaming of features
 
 	## create an independent tidy dataset by getting mean of each features group by "subject" and "activity"
@@ -87,6 +87,7 @@ run_analysis <- function() {
 	## final tidy dataset
 	final.data <- data.agg[,c(2,1,3:ncol(data.agg))]	
 
-	##return final dataset
-	final.data 
+
+	##export tidy dataset in text file format in working directory
+	write.table(final.data,"final_tidy_data.txt",row.names=F)
 }
